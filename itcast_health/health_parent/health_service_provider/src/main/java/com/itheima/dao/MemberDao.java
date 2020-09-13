@@ -1,6 +1,7 @@
 package com.itheima.dao;
 
 import com.github.pagehelper.Page;
+import com.itheima.pojo.AddPhone;
 import com.itheima.pojo.Member;
 
 import java.util.List;
@@ -28,5 +29,11 @@ public interface MemberDao {
 
     public Integer findMemberTotalCount();
 
+
+    AddPhone findByTelephoneandPhone(String phoneNumber);
+
+    void addPhoneMember(AddPhone addPhone);
+
+    Integer findIdByPhone(String phoneNumber);
 
 }

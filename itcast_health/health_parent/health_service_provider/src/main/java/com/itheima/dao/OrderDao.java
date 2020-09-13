@@ -22,4 +22,6 @@ public interface OrderDao {
 
     List<Map> findHotSetmeal();
 
+    void addByPhone(Map<String, Object> map);
+
 }
